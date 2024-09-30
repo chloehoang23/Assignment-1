@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- full-size monitor style sheet -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+    <!-- tablet style sheet-->
+    <link href="tablet.css" rel="stylesheet" type="text/css"
+        media="only screen and (min-width:481px) and (max-width:960px)">
+    <!-- phone style sheet-->
+    <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+    <title>Chloe Hoang Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">Chloe Hoang</a>
+            </div>
+            <div class="header_container">
+                <nav>
+                    <ul class="navBar">
+                        <li><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="about.html"><span>About</span></a></li>
+                        <li><a href="project.html"><span>Projects</span></a></li>
+                        <li><a href="contact.html"><span>Contact</span></a></li>
+                    </ul>
+                    <!-- Hamburger Menu -->
+                    <div class="toggleButton">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Reference: https://www.youtube.com/watch?v=GdrbE-s5DgQ&t=1s -->
+        <script>
+            const toggleButton = document.querySelector('.toggleButton')
+            const toggleButtonIcon = document.querySelector('.toggleButton i')
+            const navBar = document.querySelector('.navBar')
+            /* When the button is pressed, the Nav Bar opens */
+            toggleButton.onclick = function () {
+                navBar.classList.toggle('open')
+                const isOpen = navBar.classList.contains('open')
+                /* The icon changes to an X when the Nav Bar is open */
+                toggleButtonIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+            };
+        </script>
+
+        <!--Section 2: About Me -->
+        <section class="about">
+            <div class="colLeft">
+                <article>
+                    <h1 class="sectionTitle">About <span>Me</span></h1>
+                    <hr>
+                    <p>Hi! I’m Chloe Hoang, an 18-year-old undergraduate at Ontario Tech University, specializing in
+                        Networking
+                        and IT Security. Based in Markham, Ontario, I’m passionate about cybersecurity and digital
+                        infrastructure.
+                        In addition to my academic pursuits, I proudly represent Canada as an international
+                        badminton
+                        player,
+                        balancing my love for both sports and technology. Outside of school and badminton, I enjoy
+                        spending
+                        time
+                        with friends and exploring new places.</p>
+                </article>
+            </div>
+            <div class="colRight">
+                <h1>Get to Know Me Video!</h1>
+                <div class="video">
+                    <video width="350" height="197" controls preload poster="images/poster.png" id="video">
+                        <source src="videos/intro.mp4" type="video/mp4">
+                        <source src="videos/intro.ogv" type="video/ogv">
+                        Your browser doesn't support the video tag.
+                    </video>
+                    <br>
+                    <button onclick="playPause()">Play or pause the video</button>
+                    <script>
+                        var myVideo = document.getElementById("video");
+                        function playPause() {
+                            if (myVideo.paused)
+                                myVideo.play();
+                            else myVideo.pause();
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footerImg">
+                <a href="mailto:chloe.hoang1@ontariotechu.net" target="_blank">
+                    <img src="images/mail.png" alt="mail">
+                </a>
+                <a href="https://github.com/chloehoang23" target="_blank">
+                    <img src="images/github.png" alt="github">
+                </a>
+                <a href="https://www.instagram.com/hoang_chloe/" target="_blank">
+                    <img src="images/instagram.png" alt="instagram">
+                </a>
+            </div>
+            <p>© 2024 by Chloe Hoang</p>
+        </footer>
+    </div>
+</body>
+
+</html>
