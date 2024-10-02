@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+/* Color scheme hexadecimal values: F1EFFA D3D1E8 CAB8FF 8E8CB1 9B6BAF */
+
+@media screen and (min-width: 960px) {
+
+    html {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        height: 100%;
+        background-image: linear-gradient(to bottom, #CAB8FF, #9B6BAF);
+        font-family: "Comic Neue", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .wrapper {
+        position: relative;
+        max-width: 960px;
+        height: 480px;
+        background-color: white;
+        border-radius: 30px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    header .navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%
+    }
+
+    header .logo {
+        margin-top: -30px;
+    }
+
+    header .logo a {
+        color: black;
+        font-size: 14px;
+        font-weight: 1000;
+
+    }
+
+    header .toggleButton {
+        visibility: hidden;
+    }
+
+    header .header_container ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    header .header_container ul li {
+        color: black;
+        font-size: 13px;
+        font-weight: 500;
+        display: block;
+        white-space: nowrap;
+        padding: 10px 15px;
+    }
+
+    header .header_container a:hover {
+        color: red;
+
+    }
+
+
+    /* Home Section */
+    .home {
+        width: 960px;
+        height: 480px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+
+    .home .name {
+        margin: 0 100px;
+        margin-top: 90px;
+        font-size: 45px;
+        font-weight: 1000;
+        line-height: 0.5;
+    }
+
+    .home .name h1 span {
+        color: #8E8CB1
+    }
+
+    .home .links {
+        text-align: center;
+        height: 20px;
+        line-height: normal;
+        width: 75px;
+        margin: 0 100px;
+        padding: 10px;
+        border-radius: 10px;
+        background: radial-gradient(circle, #F1EFFA, #D3D1E8);
+        transition: background 1s ease;
+        opacity: 0.8;
+    }
+
+    .home .links span {
+        font-size: 13px;
+    }
+
+    .home .links:hover {
+        opacity: 1;
+        background:  #D3D1E8;
+    }
+
+    .home img {
+        margin-top: 40px;
+        margin-right: 125px;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+
+    /* About Section */
+    .about {
+        display: flex;
+    }
+
+    .about .colLeft {
+        float: left;
+        width: 50%;
+    }
+
+    .about .colLeft h1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 35px 25px;
+
+    }
+
+    .about hr {
+        display: block;
+        border: none;
+        width: 137px;
+        height: 5px;
+        background-color: #D3D1E8;
+        border-radius: 10px;
+        margin: -30px 20px;
+    }
+
+    .about .colLeft p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.75;
+        margin: 70px 20px;
+    }
+
+    .about .colRight {
+        margin: 90px 50px;
+    }
+
+    .about .colRight h1 {
+        margin-bottom: 0;
+        margin: 0 15px;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .about .colRight video {
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px lightgrey;
+        margin: 0 15px;
+    }
+
+    .about .colRight button {
+        background: radial-gradient(circle, #F1EFFA, #D3D1E8);
+        transition: background 1s ease;
+        color: black;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 10px;
+        font-family: "Comic Neue", sans-serif;
+        font-size: 10px;
+        margin: 10px 15px;
+        cursor: pointer;
+    }
+
+    .about button:hover {
+        opacity: 1;
+        background: #D3D1E8;
+    }
+
+
+    /* Project Section */
+    .project h1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 35px 25px;
+    }
+
+    .project hr {
+        display: block;
+        border: none;
+        width: 210px;
+        height: 5px;
+        background-color: #D3D1E8;
+        border-radius: 10px;
+        margin: -30px 25px;
+    }
+
+    .project .allProjects {
+        margin: 40px 10px;
+        display: flex;
+    }
+
+    .project .allProjects .projectInfo {
+        width: 275px;
+        height: 141px;
+        margin: 0 20px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .project h2 {
+        font-size: 17px;
+        line-height: 0.5;
+    }
+
+    .project p {
+        font-size: 10px;
+        line-height: 1.3;
+    }
+
+    .project img {
+        margin: 5px 30px;
+        height: 127px;
+        width: 250px;
+    }
+
+
+    /* Contact Section */
+    .contact {
+        padding: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 960px;
+        height: 480px;
+    }
+
+    .contact img {
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .contact .info {
+        margin: -40px 0;
+    }
+
+    .contact .info .phone,
+    .email,
+    .location {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        gap: 20px;
+    }
+
+    .contact .colLeft {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .contact .colLeft h1 {
+        font-weight: 700;
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    .contact .colLeft hr {
+        width: 105px;
+        height: 5px;
+        background-color: #D3D1E8;
+        border-radius: 10px;
+        border: none;
+        margin: -20px 0;
+    }
+
+    .contact .colLeft h3 {
+        margin: 65px 0;
+        font-size: 17px;
+    }
+
+    .contact p {
+        font-weight: 350;
+        font-size: 13px;
+    }
+
+    .contact .colRight {
+        width: 45%;
+    }
+
+    .contact .colRight form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 120px;
+        gap: 10px;
+        font-family: "Comic Neue", sans-serif;
+    }
+
+    .contact .contactInfo {
+        padding: 5px;
+        border: 2px solid #D3D1E8;
+        border-radius: 15px;
+        font-family: "Comic Neue", sans-serif;
+        font-size: 10px;
+        color: grey;
+        width: 80%;
+    }
+
+    .contact .contactInfo::placeholder {
+        font-family: "Comic Neue", sans-serif;
+        font-size: 10px;
+        color: grey;
+    }
+
+    .contact .contactInfo:focus,
+    .contact .contactInfo:active {
+        outline: none;
+        border: 2px solid #D3D1E8;
+        color: grey;
+    }
+
+    .contact .buttonContainer {
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .contact .contactItems button {
+        display: inline-flex;
+        padding: 7px 15px;
+        font-family: "Comic Neue", sans-serif;
+        font-size: 10px;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        background: radial-gradient(circle, #F1EFFA, #D3D1E8);
+        transition: background 1s ease;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    .contact .contactItems button:hover {
+        opacity: 1;
+        background: #D3D1E8;
+    }
+
+
+    /* Footer */
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer img {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        margin: -13px -5px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
