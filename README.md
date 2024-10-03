@@ -55,3 +55,6 @@ This project is built with media queries to ensure that the layout adjusts acros
 ## References
 Inspiration for the Hambuger Menu section of my project was drawn from the following tutorial:
 [How To Create a Responsive Navbar Using HTML & CSS | Step By Step Tutorial](https://www.youtube.com/watch?v=GdrbE-s5DgQ&t=1s)
+
+Contact Form functionality was based on this tutorial:
+[How To Create Working Contact Form Using HTML & CSS | Receive Contact Form Data on Email](https://www.youtube.com/watch?v=your-contact-form-link)
