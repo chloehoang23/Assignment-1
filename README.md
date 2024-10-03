@@ -35,7 +35,7 @@ git clone https://github.com/your-repository-url
 
 
 
-# Programming Languages Used
+## Programming Languages Used
 * HTML5
 * CSS3
 * Javascript
