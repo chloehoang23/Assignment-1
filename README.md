@@ -4,7 +4,6 @@ This project is a personal portfolio website developed as part of Assignment 1 f
 ## Contents:
 * [Overview](#overview)
 * [Installation](#installation)
-* [Features](#features)
 * [Programming Languages Used](#programming-languages-used)
 * [Media Queries and Responsiveness](#media-queries-and-responsiveness)
 * [References](#references)
